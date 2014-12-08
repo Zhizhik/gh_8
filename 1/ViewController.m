@@ -8,20 +8,42 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIButton *barbieButton;
+@property (weak, nonatomic) IBOutlet UIButton *winxButton;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"1"];
+    UICollectionViewFlowLayout *layout = (id)self.collectionView.collectionViewLayout;
+    layout.itemSize = self.view.frame.size;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
+
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 5;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"1" forIndexPath:indexPath];
+    return cell;
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    self.pageControl.currentPage = self.collectionView.contentOffset.x/self.collectionView.frame.size.width;
+}
+
 
 @end

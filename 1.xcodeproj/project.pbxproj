@@ -14,6 +14,8 @@
 		B72CAD281A36065400E5D26A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72CAD271A36065400E5D26A /* Images.xcassets */; };
 		B72CAD2B1A36065400E5D26A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72CAD291A36065400E5D26A /* LaunchScreen.xib */; };
 		B72CAD371A36065400E5D26A /* _Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B72CAD361A36065400E5D26A /* _Tests.m */; };
+		B72CAD411A36095900E5D26A /* latest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B72CAD401A36095900E5D26A /* latest.jpg */; };
+		B72CAD431A36098900E5D26A /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = B72CAD421A36098900E5D26A /* Empty.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		B72CAD301A36065400E5D26A /* 1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72CAD351A36065400E5D26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B72CAD361A36065400E5D26A /* _Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _Tests.m; sourceTree = "<group>"; };
+		B72CAD401A36095900E5D26A /* latest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = latest.jpg; path = ../../latest.jpg; sourceTree = "<group>"; };
+		B72CAD421A36098900E5D26A /* Empty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				B72CAD211A36065400E5D26A /* ViewController.h */,
 				B72CAD221A36065400E5D26A /* ViewController.m */,
 				B72CAD241A36065400E5D26A /* Main.storyboard */,
+				B72CAD421A36098900E5D26A /* Empty.xib */,
+				B72CAD401A36095900E5D26A /* latest.jpg */,
 				B72CAD271A36065400E5D26A /* Images.xcassets */,
 				B72CAD291A36065400E5D26A /* LaunchScreen.xib */,
 				B72CAD1A1A36065400E5D26A /* Supporting Files */,
@@ -199,8 +205,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72CAD431A36098900E5D26A /* Empty.xib in Resources */,
 				B72CAD261A36065400E5D26A /* Main.storyboard in Resources */,
 				B72CAD2B1A36065400E5D26A /* LaunchScreen.xib in Resources */,
+				B72CAD411A36095900E5D26A /* latest.jpg in Resources */,
 				B72CAD281A36065400E5D26A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
